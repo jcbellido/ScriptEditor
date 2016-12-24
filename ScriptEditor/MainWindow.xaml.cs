@@ -15,14 +15,28 @@ using System.Windows.Shapes;
 
 namespace ScriptEditor
 {
-    /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+            mainScriptpane.ScriptEditorRichTextBox.DataContext = null;
+        }
+
+        private void buttonQuit_Click(object sender, RoutedEventArgs e)
+        {
+            // TODO verify the model is properly persisted before quitting
+            this.Close();
+        }
+
+        private void buttonSave_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void buttonLoad_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
