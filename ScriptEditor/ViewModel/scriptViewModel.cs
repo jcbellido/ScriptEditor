@@ -8,5 +8,6 @@ namespace ScriptEditor.ViewModel
 {
     class ScriptViewModel
     {
+        // Something devoid of meaning and purpose ... 
     }
 }
