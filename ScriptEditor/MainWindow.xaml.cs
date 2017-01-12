@@ -38,5 +38,15 @@ namespace ScriptEditor
         {
 
         }
+
+        private void buttonPurge_Click(object sender, RoutedEventArgs e)
+        {
+            mainScriptpane.PurgeDocument();
+        }
+
+        private void buttonGenerateFixed_Click(object sender, RoutedEventArgs e)
+        {
+            mainScriptpane.GenerateFixedDocument();
+        }
     }
 }
